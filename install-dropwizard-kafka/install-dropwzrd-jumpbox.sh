@@ -14,6 +14,7 @@
  rpm -Uvh jdk-8u102-linux-x64.rpm 
  rpm -Uvh jre-8u102-linux-x64.rpm 
  
- 
-cd /tmp
+ cd /tmp 
+ git clone https://github.com/srilathapas/azure-vmss-extension/tree/master/install-dropwizard-kafka
+cd /tmp/install-dropwizard-kafka
  $java -jar target/dropwizard-kafka-http-0.0.1-SNAPSHOT.jar server kafka-http.yml
