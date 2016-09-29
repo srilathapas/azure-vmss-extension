@@ -1,0 +1,11 @@
+producer:
+  "bootstrap.servers": "10.0.2.200:9092,10.0.2.201:9092"
+  "key.serializer": "org.apache.kafka.common.serialization.ByteArraySerializer"
+  "value.serializer": "org.apache.kafka.common.serialization.ByteArraySerializer"
+
+consumer:
+  "zookeeper.connect": "10.0.2.100:2181,10.0.2.101:2181,10.0.2.102:2181"
+  "group.id": "group"
+  "auto.offset.reset": "smallest"
+  "consumer.timeout.ms": "500"
+
